@@ -1,0 +1,13 @@
+environments:
+  dev:
+    apiHost: http://localhost:8080
+
+clients:
+  blocking:
+    connectionManager:
+      maxTotal: 100
+      defaultMaxPerRoute: 20
+    requestConfig:
+      requestTimeOut: 3000
+      socketTimeOut: 3000
+
